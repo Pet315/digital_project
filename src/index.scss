@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'TT Hoves Light';
+  src: url('fonts/tt_hoves/light.ttf')
+}
+
+@font-face {
+  font-family: 'TT Hoves Regular';
+  src: url('fonts/tt_hoves/regular.ttf')
+}
+
+@font-face {
+  font-family: 'TT Hoves Medium';
+  src: url('fonts/tt_hoves/medium.ttf')
+}
+
+@font-face {
+  font-family: 'TT Hoves Bold';
+  src: url('fonts/tt_hoves/bold.ttf')
+}
+
+@font-face {
+  font-family: 'SF Pro Display Black';
+  src: url('fonts/sf_pro_display/black.otf')
+}
+
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap')
+}
+
+.App {
+  margin-left: 135px;
+  width: 1170px;
+
+  h1 {
+    font-family: 'TT Hoves Light';
+    color: #BDBDBD;
+  }
+
+  h1, h2 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  nav, h2, p {
+    color: #333333;
+  }
+}
+
+header {
+  .col-md-4 {
+    h1 {
+      margin-top: 365.15px;
+    }
+    h2 {
+      margin-top: -10px;
+      font-family: 'TT Hoves Bold';
+    }
+    .icon {
+      margin-top: 29.14px;
+    }
+    img {
+      margin-top: 90px;
+    }
+  }
+  
+  .col-md-8 {
+    nav {
+      span {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+      margin-top: 44.69px;
+      word-spacing: 60px;
+      font-family: 'TT Hoves Regular';
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.2em;
+    }
+
+    .image-container {
+      position: relative;
+      margin-top: 48.65px;
+    }
+
+    .bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+section {
+  margin-top: 120px;
+
+  .about {
+    height: 435px;
+    background-color: #FBFBFB;
+
+    .main {
+      width: 1015px;
+      margin-top: 30px;
+      img {
+        width: 270px;
+      }
+    }
+  }
+
+  .tasks, .projects {
+    margin-top: 60px;
+  }
+
+  .tasks {
+    h3 {
+      font-family: 'SF Pro Display Black';
+      font-size: 200px;
+      line-height: 140px;
+      color: #F2F2F2;
+    }
+
+    p {
+      font-family: 'TT Hoves Regular';
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+
+  .projects {
+    .part1 {
+      .project1_image, .project2 {
+        width: 570px;
+        height: 255px;
+      }
+  
+      .project1 {
+        position: relative;
+        display: inline-block;
+  
+        .project1_image {
+          opacity: 0.8;
+          filter: brightness(0.35) contrast(1.5) saturate(1.5);
+          max-width: 100%;
+          height: auto;
+        }
+  
+        p, .project1_arrow {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          color: #FFFFFF;
+        }
+    
+        .project1_header {
+          top: 45%;
+          left: 50%;
+          font-family: 'TT Hoves Bold';
+          font-size: 64px;
+          line-height: 64px;
+          text-align: left;
+        }
+    
+        .project1_link {
+          top: 80%;
+          left: 22.5%;
+          // font-family: Gothic A1;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 12px;
+          letter-spacing: 0.2em;
+          text-align: left;
+        }
+    
+        .project1_arrow {
+          top: 80%;
+          left: 34%;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    
+    .part2 {
+      margin-top: 30px;
+    }
+    
+    .container {
+      display: flex;
+      align-items: right;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    
+    .content {
+      flex: 1;
+    }
+    
+    .black-box {
+      margin-top: 30px;
+      width: 221.81px;
+      height: 71px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+
+  }
+}
