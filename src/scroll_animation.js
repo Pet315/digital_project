@@ -1,5 +1,3 @@
-const scrollElement = document.querySelector('.project');
-
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -11,9 +9,10 @@ function isElementInViewport(element) {
 }
 
 function handleScrollAnimation() {
-    if (isElementInViewport(scrollElement)) {
-      scrollElement.style.opacity = '1';
-    }
+  const scrollElement = document.querySelector('.about');
+  if (isElementInViewport(scrollElement)) {
+    scrollElement.style.opacity = '1';
+  }
 }
 
 window.addEventListener('scroll', handleScrollAnimation);

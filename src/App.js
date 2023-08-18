@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './scroll_animation.js'
+import './scroll_animation.js';
 
 function App() {
   const col_about1 = {
@@ -21,7 +21,7 @@ function App() {
         <div className="row">
           <div className="col1 col">
             <a href="/"><img className="icon" src="/img/icon.jpg" alt="" /></a>
-            <h1 className="project">PROJECT</h1>
+            <h1>PROJECT</h1>
             <h2>HOME</h2>
             <div className="button-container">
               <button>
