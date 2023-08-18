@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import './scroll_animation.js'
 
 function App() {
   const col_about1 = {
@@ -20,7 +21,7 @@ function App() {
         <div className="row">
           <div className="col1 col">
             <a href="/"><img className="icon" src="/img/icon.jpg" alt="" /></a>
-            <h1>PROJECT</h1>
+            <h1 className="project">PROJECT</h1>
             <h2>HOME</h2>
             <div className="button-container">
               <button>
@@ -53,7 +54,7 @@ function App() {
             <nav><span>ГЛАВНАЯ</span> ГАЛЕРЕЯ ПРОЕКТЫ СЕРТИФИКАТЫ КОНТАКТЫ</nav>
             <div className="image-container">
               <img width={770} height={829} src="/img/house_photo.png" alt="" />
-              <button onClick={() => window.location.href = "/show"}>
+              <button className="button" onClick={() => window.location.href = "/show"}>
                 ВЗГЛЯНУТЬ
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.5C3 11.2239 3.22386 11 3.5 11L19.5 11C19.7761 11 20 11.2239 20 11.5C20 11.7761 19.7761 12 19.5 12L3.5 12C3.22386 12 3 11.7761 3 11.5Z" fill="#333333"/>
@@ -83,7 +84,7 @@ function App() {
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                   It has survived not only five centuries, but also the leap into electronic typesetting, 
                   remaining essentially unchanged.</p>
-                <button onClick={() => window.location.href = "/about"}>
+                <button className="button" onClick={() => window.location.href = "/about"}>
                   ЧИТАТЬ
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.5C3 11.2239 3.22386 11 3.5 11L19.5 11C19.7761 11 20 11.2239 20 11.5C20 11.7761 19.7761 12 19.5 12L3.5 12C3.22386 12 3 11.7761 3 11.5Z" fill="#333333"/>
@@ -147,7 +148,7 @@ function App() {
             <div className="col"><img src="/img/project5.png" alt="" /></div>
           </div>
 
-          <button onClick={() => window.location.href = "/projects"}>
+          <button className="button" onClick={() => window.location.href = "/projects"}>
             ВСЕ ПРОЕКТЫ
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="white"/>
@@ -184,7 +185,7 @@ function App() {
                   <textarea id="message" name="message" placeholder="Сообщение*" required />
                 </div>
                 <p style={{marginLeft: '40px', width: '333px'}}>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-                <button type="submit">
+                <button className="button" type="submit">
                   ОТПРАВИТЬ
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="white"/>
@@ -195,7 +196,7 @@ function App() {
               </form>
             </div>
             
-            <div className="col">
+            <div className="col2 col">
               <img width={749} height={369} src="img/connect.png" style={{marginTop: '11px'}} alt="" />
             </div>
           </div>
@@ -253,6 +254,8 @@ function App() {
           <p>© 2019 Digital Project. Все права защищены.</p>
         </div>
       </footer>
+
+      
     </div>
   );
 }
