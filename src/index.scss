@@ -64,6 +64,10 @@
 }
 
 .App {
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-family: 'TT Hoves Light';
     color: #BDBDBD;
@@ -74,7 +78,7 @@
     line-height: 64px;
   }
 
-  nav, h2, p {
+  nav, a, h2, p {
     color: #333333;
   }
 
@@ -166,7 +170,7 @@ header {
   }
   
   .col2 {
-    nav {
+    nav, a {
       span {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
