@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Vanilla JS</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+        .todo-list { list-style: none; padding: 0; }
+        .todo-item { display: flex; justify-content: space-between; padding: 10px; border: 1px solid #ddd; margin-top: 10px; }
+        .completed { text-decoration: line-through; color: #888; }
+    </style>
+</head>
+<body>
+    <h2>To-Do List</h2>
+    <form id="todoForm">
+        <input type="text" id="newTodo" placeholder="Enter a task" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todoList" class="todo-list"></ul>
+    <button id="clearCompleted">Clear Completed Tasks</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

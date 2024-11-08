@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список користувачів</title>
+    <!-- Connect jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Список користувачів</h1>
+    <button id="load-users">Завантажити користувачів</button>
+    <div id="user-list"></div>
+
+    <script>
+        // JS and jQuery to upload data
+        $(document).ready(function() {
+            $('#load-users').click(function() {
+                $.ajax({
+                    url: 'http://localhost:5500/users.json', 
+                    type: 'GET', // Метод запиту
+                    dataType: 'json',
+                    success: function(data) {
+                        let userList = $('#user-list');
+                        userList.empty(); 
+
+                        data.forEach(function(user) {
+                            userList.append(`<p>ID: ${user.id} | Ім'я: ${user.name} | Email: ${user.email}</p>`);
+                        });
+                    },
+                    error: function() {
+                        $('#user-list').html('<p>Не вдалося завантажити дані</p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
